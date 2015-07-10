@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
+	width:100%;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -17,7 +18,7 @@ body{
 
 /* --------------------------------------------------------------------------------------- */
 .stuff-detail{
-	background-color: #ab9123;
+	background-color: #4c5;
 	width:50%;
 	float:left;
 	height:160px;
@@ -34,7 +35,7 @@ body{
 
 .stuff-detail .stuff-artist{
 	font-size:11px;
-	margin: 5px 10px;
+	margin: 25% 0 10px 10px;
 	padding: 0;
 }
 
@@ -45,6 +46,131 @@ body{
 }
 
 /* --------------------------------------------------------------------------------------- */
+.stuff-title{
+	margin: 20px 20px;
+	color: #4c5;
+	font-size:23px;
+}
+
+.stuff-desc{
+	margin: 20px 20px;
+}
+
+.stuff-desc p{
+	line-height: 30px;
+}
+
+.stuff-menu{
+	margin: 0;
+	padding: 0;
+}
+
+.stuff-menu li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	float:left;
+	width:50%;
+	height:50px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 24px;
+	background-color: #fff;
+}
+
+.stuff-menu li.buy{
+	background-color: #000;
+	color:#fff;
+}
+
+.stuff-material{}
+
+.stuff-material li{
+	line-height: 25px;
+}
+
+.stuff-step{}
+
+.stuff-step img{
+	width:100%;
+}
+
+.stuff-step h2{
+	font-size:23px;
+	color:#4c5;
+	padding-left: 10px;
+	margin: 5px 0;
+}
+
+.stuff-step p{
+	line-height: 30px;
+	padding : 0 10px;
+	margin: 0 0 40px 0;
+}
+
+.stuff-artisan{
+	width:100%;
+	height: 65px;
+	text-align: center;
+	padding-top: 15px;
+	background-color: #4c5;
+}
+
+.stuff-artisan .stuff-artisan-name{
+	font-size: 22px;
+	color:#fff;
+}
+
+.stuff-artisan .stuff-artisan-more{
+	font-size: 12px;
+	color:#fff;
+}
+
+.stuff-more{
+	width:100%;
+	text-align: center;
+	margin: 0;
+	padding:0;
+	border: 0;
+}
+
+.stuff-more img{
+	margin: 0;
+	padding:0;
+	border: 0;
+	width:33.3%;
+	text-align: center;
+	float:left;
+}
+
+.artisan-name{
+	margin-left: 10px;
+	font-size: 26px;
+	color:#4c5;
+}
+
+.artisan-avator, .artisan-avator img{
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+
+.artisan-desc{
+	width: 100%;
+}
+
+.artisan-desc p{
+	padding:10px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+.footer-xline{
+	width:100%;
+	height:45px;
+	display: block;
+}
 
 .footer{
 	position: fixed;
