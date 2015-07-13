@@ -56,7 +56,7 @@ a{
 /* --------------------------------------------------------------------------------------- */
 .stuff-title{
 	margin: 20px 20px;
-	color: #4c5;
+	color: #333;
 	font-size:23px;
 }
 
@@ -107,7 +107,7 @@ a{
 
 .stuff-step h2{
 	font-size:23px;
-	color:#4c5;
+	color:#333;
 	padding-left: 10px;
 	margin: 5px 0;
 }
@@ -124,6 +124,10 @@ a{
 	text-align: center;
 	padding-top: 15px;
 	background-color: #94969b;
+}
+
+.stuff-artisan a{
+	color:#fff;
 }
 
 .stuff-artisan .stuff-artisan-name{
@@ -186,6 +190,7 @@ a{
 
 .artisan-desc{
 	width: 100%;
+	line-height: 32px;
 }
 
 .artisan-desc p{
