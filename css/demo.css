@@ -24,7 +24,7 @@ a{
 .header{height:0;}
 
 .stuff-detail{
-	background-color: #4c5;
+	background-color: #94969b;
 	width:50%;
 	float:left;
 	height:160px;
@@ -123,7 +123,7 @@ a{
 	height: 65px;
 	text-align: center;
 	padding-top: 15px;
-	background-color: #4c5;
+	background-color: #94969b;
 }
 
 .stuff-artisan .stuff-artisan-name{
@@ -207,7 +207,7 @@ a{
 	height:45px;
 	list-style-type: none;
 	text-align: center;
-	background-color: #4c5;
+	background-color: #333;
 }
 
 .footer > .footer-menu li > a{
