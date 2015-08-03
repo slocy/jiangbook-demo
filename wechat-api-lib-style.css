@@ -23,9 +23,3 @@ h1.title{
 	display: block;
 	text-align: center;
 }
-
-input.button{
-	width:98%; 
-	margin: 1%;
-	font-size: 25px;
-}
