@@ -1,0 +1,24 @@
+/* Common styles*/
+body, *{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-family: "Lucida Grande", Arial, Consolas;
+	font-size: 18px;
+	width: 100%;
+}
+
+header{
+	width: 100%;
+}
+
+content{
+	width: 100%;
+}
+
+/* Class styles*/
+input.button{
+	width:98%; 
+	margin: 1%;
+	font-size: 20px;
+}
