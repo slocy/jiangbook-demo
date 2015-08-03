@@ -1,15 +1,16 @@
 /* Common styles*/
-body, *{
-	margin: 0;
+body{
 	padding: 0;
 	width: auto;
 	font-family: "Lucida Grande", Arial, Consolas;
-	font-size: 18px;
+	font-size: 13px;
 	width: 100%;
+	margin: auto;
 }
 
 header{
-	width: 100%;
+	width: 94%;
+	margin: 3%;
 }
 
 content{
@@ -17,8 +18,14 @@ content{
 }
 
 /* Class styles*/
+h1.title{
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
 input.button{
 	width:98%; 
 	margin: 1%;
-	font-size: 20px;
+	font-size: 25px;
 }
