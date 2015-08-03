@@ -1,4 +1,43 @@
-function wxapi-init(){
+/*
+onMenuShareTimeline
+onMenuShareAppMessage
+onMenuShareQQ
+onMenuShareWeibo
+onMenuShareQZone
+startRecord
+stopRecord
+onVoiceRecordEnd
+playVoice
+pauseVoice
+stopVoice
+onVoicePlayEnd
+uploadVoice
+downloadVoice
+chooseImage
+previewImage
+uploadImage
+downloadImage
+translateVoice
+getNetworkType
+openLocation
+getLocation
+hideOptionMenu
+showOptionMenu
+hideMenuItems
+showMenuItems
+hideAllNonBaseMenuItem
+showAllNonBaseMenuItem
+closeWindow
+scanQRCode
+chooseWXPay
+openProductSpecificView
+addCard
+chooseCard
+openCard
+*/
+
+
+function wxapi_init(){
 	wx.config({
 	    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
 	    appId: 'wxdebf3e2511cf03f7', // 必填，公众号的唯一标识
