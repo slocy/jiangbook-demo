@@ -1,5 +1,4 @@
+// Init all configurations and parameters in load.
 $( "#button_init" ).click( function( event ) {
-	console.log('test');
-
-	alert('test');
-} );
+	console.log('#=> Initial action started...');
+});
