@@ -17,7 +17,32 @@ function makeSignature(jsapiTicket, randomKey, timeStamp, url){
 	return sha;
 }
 
-function wxapi_init(){
+/*
+Get the JS API ticket, it's temporary access method for single request.
+The ticket should be stored at server side.
+*/
+function getApiTicketTemporary(){
+	$.get( {
+		url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxdebf3e2511cf03f7&secret=73cea8e8e906b72c86ce00ba47ab625a",
+		crossDomain: true, 
+		function( data ) {
+			var token = data.access_token;
+
+			$.get({
+				url: "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=" + token,
+				crossDomain: true, 
+				function( data ) {
+					alert(data.ticket);
+				},
+			});
+		}
+	});
+}
+
+/*
+Init all configurations for current page request.
+*/
+function wxapi_init(ticket, appId){
 	var _jsapiTicket = 'kgt8ON7yVITDhtdwci0qef3l2R9YvFTapCYoJUzN-YEBB6mGhmi5T5IK6L4B86FrUMfpsU1YSoVmhPLSSJjEfA';
 	var _timeStamp = Date.now();
 	var _randomKey = randomKey();

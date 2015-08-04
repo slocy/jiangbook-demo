@@ -1,6 +1,11 @@
-// Init all configurations and parameters in load.
+
+/*
+Fire every button.
+*/
 $( "#button_init" ).click( function( event ) {
-	wxapi_init();
+	//wxapi_init();
+
+	getApiTicketTemporary();
 });
 
 $( "#button_shareFriend" ).click( function( event ) {
