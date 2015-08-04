@@ -168,13 +168,64 @@ function shareToFriend(){
 	});
 }
 
-function shareToWechatTimeline(){}
+function shareToWechatTimeline(){
+	wx.onMenuShareTimeline({
+	    title: '', // 分享标题
+	    link: '', // 分享链接
+	    imgUrl: '', // 分享图标
+	    success: function () { 
+	        // 用户确认分享后执行的回调函数
+	    },
+	    cancel: function () { 
+	        // 用户取消分享后执行的回调函数
+	    }
+	});
+}
 
-function shareToQQ(){}
+function shareToQQ(){
+	wx.onMenuShareQQ({
+	    title: '', // 分享标题
+	    desc: '', // 分享描述
+	    link: '', // 分享链接
+	    imgUrl: '', // 分享图标
+	    success: function () { 
+	       // 用户确认分享后执行的回调函数
+	    },
+	    cancel: function () { 
+	       // 用户取消分享后执行的回调函数
+	    }
+	});
+}
 
-function shareToWeibo(){}
+function shareToWeibo(){
+	wx.onMenuShareWeibo({
+	    title: '', // 分享标题
+	    desc: '', // 分享描述
+	    link: '', // 分享链接
+	    imgUrl: '', // 分享图标
+	    success: function () { 
+	       // 用户确认分享后执行的回调函数
+	    },
+	    cancel: function () { 
+	        // 用户取消分享后执行的回调函数
+	    }
+	});
+}
 
-function shareToQZone(){}
+function shareToQZone(){
+	wx.onMenuShareQZone({
+	    title: '', // 分享标题
+	    desc: '', // 分享描述
+	    link: '', // 分享链接
+	    imgUrl: '', // 分享图标
+	    success: function () { 
+	       // 用户确认分享后执行的回调函数
+	    },
+	    cancel: function () { 
+	        // 用户取消分享后执行的回调函数
+	    }
+	});
+}
 
 /*
 Get the network type from cutomer's cellphone.
@@ -182,7 +233,7 @@ Get the network type from cutomer's cellphone.
 function getNetworkType(){
 	wx.getNetworkType({
 	    success: function (res) {
-	        alert(res); // 返回网络类型2g，3g，4g，wifi
+	        alert(res.networkType); // 返回网络类型2g，3g，4g，wifi
 	    }
 	});
 }
@@ -199,7 +250,7 @@ function getLocation(){
 	        var speed = res.speed; // 速度，以米/每秒计
 	        var accuracy = res.accuracy; // 位置精度
 
-	        alert(res);
+	        alert('x=' + res.latitude + ', y=' + res.longitude);
 	    }
 	});
 }
@@ -209,8 +260,8 @@ Redirect current page to product page, including the product page, detail page a
 */
 function redirectToProductPage(productId, viewType){
 	wx.openProductSpecificView({
-	    productId: 1, // 商品id
-	    viewType: 2 // 0.默认值，普通商品详情页1.扫一扫商品详情页2.小店商品详情页
+	    productId: productId, // 商品id
+	    viewType: viewType // 0.默认值，普通商品详情页1.扫一扫商品详情页2.小店商品详情页
 	});
 }
 
