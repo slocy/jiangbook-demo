@@ -6,3 +6,11 @@ $( "#button_init" ).click( function( event ) {
 $( "#button_shareFriend" ).click( function( event ) {
 	shareToFriend();
 });
+
+$( "#button_checkBrowser" ).click( function( event ) {
+	checkBrowser();
+});
+
+$( "#button_chooseImage" ).click( function( event ) {
+	chooseImage();
+});
