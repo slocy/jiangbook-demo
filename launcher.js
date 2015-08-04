@@ -13,7 +13,7 @@ function getApiTicketTemporary(){
 
 			$.ajax({
 				url: "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=" + token,
-				crossDomain: true,
+				crossDomain: true, 
 				success: function( data ) {
 					console.log(data);
 
