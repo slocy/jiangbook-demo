@@ -21,7 +21,7 @@ function makeSignature(jsapiTicket, randomKey, timeStamp, url){
 Init all configurations for current page request.
 */
 function wxapi_init(ticket, appId){
-	var _jsapiTicket = 'kgt8ON7yVITDhtdwci0qef3l2R9YvFTapCYoJUzN-YEBB6mGhmi5T5IK6L4B86FrUMfpsU1YSoVmhPLSSJjEfA';
+	var _jsapiTicket = 'kgt8ON7yVITDhtdwci0qef3l2R9YvFTapCYoJUzN-YFE15ZOhlmMlG42TYNm18QT-Y100IuXyifFuC4AXYz0DQ';
 	var _timeStamp = Date.now();
 	var _randomKey = randomKey();
 	var _appId = 'wxdebf3e2511cf03f7';
@@ -140,6 +140,14 @@ function checkBrowser(){
 	    }
 	});
 }
+
+/*
+Get the Wechat customer authentication.
+*/
+function getWechatAuthentication(){
+
+}
+
 /*
 Share current page to WeChat friend.
 */
@@ -157,6 +165,52 @@ function shareToFriend(){
 	    cancel: function () { 
 	    	alert('Share cancelled!');
 	    }
+	});
+}
+
+function shareToWechatTimeline(){}
+
+function shareToQQ(){}
+
+function shareToWeibo(){}
+
+function shareToQZone(){}
+
+/*
+Get the network type from cutomer's cellphone.
+*/
+function getNetworkType(){
+	wx.getNetworkType({
+	    success: function (res) {
+	        alert(res); // 返回网络类型2g，3g，4g，wifi
+	    }
+	});
+}
+
+/*
+Get the geo location of customer.
+*/
+function getLocation(){
+	wx.getLocation({
+	    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+	    success: function (res) {
+	        var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+	        var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+	        var speed = res.speed; // 速度，以米/每秒计
+	        var accuracy = res.accuracy; // 位置精度
+
+	        alert(res);
+	    }
+	});
+}
+
+/*
+Redirect current page to product page, including the product page, detail page and scanning page.
+*/
+function redirectToProductPage(productId, viewType){
+	wx.openProductSpecificView({
+	    productId: 1, // 商品id
+	    viewType: 2 // 0.默认值，普通商品详情页1.扫一扫商品详情页2.小店商品详情页
 	});
 }
 

@@ -29,8 +29,7 @@ function getApiTicketTemporary(){
 Fire every button.
 */
 $( "#button_init" ).click( function( event ) {
-	//wxapi_init();
-	getApiTicketTemporary();
+	wxapi_init();
 });
 
 $( "#button_shareFriend" ).click( function( event ) {
@@ -43,4 +42,12 @@ $( "#button_checkBrowser" ).click( function( event ) {
 
 $( "#button_chooseImage" ).click( function( event ) {
 	chooseImage();
+});
+
+$( "#button_getNetworkType" ).click( function( event ) {
+	getNetworkType();
+});
+
+$( "#button_getLocation" ).click( function( event ) {
+	getLocation();
 });
