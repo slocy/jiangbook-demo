@@ -6,7 +6,6 @@ function getApiTicketTemporary(){
 	$.ajax( {
 		url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxdebf3e2511cf03f7&secret=73cea8e8e906b72c86ce00ba47ab625a",
 		crossDomain: true, 
-		dataType:"jsonp",
 		success: function( data ) {
 			console.log(data);
 
@@ -15,7 +14,6 @@ function getApiTicketTemporary(){
 			$.ajax({
 				url: "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=" + token,
 				crossDomain: true, 
-				dataType:"jsonp",
 				success: function( data ) {
 					console.log(data);
 
