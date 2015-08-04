@@ -10,11 +10,9 @@ function randomKey(key){
 function makeSignature(jsapiTicket, randomKey, timeStamp, url){
 	var pass = 'jsapi_ticket=' + jsapiTicket + '&noncestr=' + randomKey + '&timestamp=' + timeStamp + '&url=' + url;
 
-	alert(pass);
+	//alert(pass);
 
 	var sha = Sha1.hash(pass);
-
-	alert(sha);
 
 	return sha;
 }
@@ -86,6 +84,6 @@ function wxapi_init(){
 		// 具体错误信息可以打开config的debug模式查看，
 		// 也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
 
-		alert('error!');
+		//alert('error!');
 	});
 };
