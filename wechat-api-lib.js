@@ -10,7 +10,13 @@ function randomKey(key){
 function makeSignature(jsapiTicket, randomKey, timeStamp, url){
 	var pass = 'jsapi_ticket=' + jsapiTicket + '&noncestr=' + randomKey + '&timestamp=timeStamp&url=' + url;
 
-	return Sha1.hash(pass);
+	alert(pass);
+
+	var sha = Sha1.hash(pass);
+
+	alert(sha);
+
+	return sha;
 }
 
 function wxapi_init(){
