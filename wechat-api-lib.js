@@ -8,7 +8,7 @@ function randomKey(key){
 }
 
 function makeSignature(jsapiTicket, randomKey, timeStamp, url){
-	var pass = 'jsapi_ticket=' + jsapiTicket + '&noncestr=' + randomKey + '&timestamp=' + _timeStamp + '&url=' + url;
+	var pass = 'jsapi_ticket=' + jsapiTicket + '&noncestr=' + randomKey + '&timestamp=' + timeStamp + '&url=' + url;
 
 	alert(pass);
 
