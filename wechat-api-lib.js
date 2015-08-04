@@ -76,7 +76,7 @@ function wxapi_init(){
 	    // config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，
 	    // 则须把相关接口放在ready函数中调用来确保正确执行。
 	    // 对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
-	    alert('ready!');
+	    //alert('ready!');
 	});
 
 	wx.error(function(res){
@@ -87,3 +87,23 @@ function wxapi_init(){
 		//alert('error!');
 	});
 };
+
+/*
+Share current page to WeChat friend.
+*/
+function shareToFriend(){
+	wx.onMenuShareAppMessage({
+	    title: 'Test Page of Slocy.cn', // 分享标题
+	    desc: 'Test description', // 分享描述
+	    link: 'http://wx.slocy.cn', // 分享链接
+	    imgUrl: '', // 分享图标
+	    type: 'link', // 分享类型,music、video或link，不填默认为link
+	    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+	    success: function () { 
+	        alert('Shared!');
+	    },
+	    cancel: function () { 
+	    	alert('Share cancelled!');
+	    }
+	});
+}
